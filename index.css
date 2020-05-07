@@ -19,3 +19,59 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #a41d3145;
 }
+.side-bar{
+    width: 25vw;
+    position: fixed;
+    min-width: 470px;
+    z-index: 200;
+}
+.side-bar .side_nav{
+    height: 5.2rem;
+    color: #a41d31;
+    font-weight: bold;
+    position: relative;
+    transition: all 1s ease;
+    font-family: 'Cormorant', serif;
+}
+.side-bar .side_nav.active{
+    height: 6rem;
+    font-size: 30px;
+    transition: all 1s ease;
+}
+.side-bar .side_nav:before{
+    content: ' ';
+    margin: 0.6rem .3rem;
+    background-color: #a41d31;
+    border-radius: 3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    transition: all 1s ease;
+}
+.side-bar .side_nav.active:before{
+    content: ' ';
+    margin: 1.1rem .3rem;
+    background-color: #a41d31;
+    border-radius: 3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    transition: all 1s ease;
+}
+.side-bar .side_nav#home_nav.active:before {
+    content: ' ';
+    margin: 0.9rem .3rem;
+    background-color: #a41d31;
+    border-radius: 3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    transition: all 1s ease;
+}
+.side-bar:before{
+    content: ' ';
+    margin: 2.5rem 0.5rem;
+    background-color: #a41d31;
+    border-radius: 3rem;
+    width: 1.5px;
+    height: 37rem;
+    position: absolute;
+    transition: all 1s ease;
+}
