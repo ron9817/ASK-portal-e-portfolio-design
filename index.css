@@ -75,3 +75,114 @@ body{
     position: absolute;
     transition: all 1s ease;
 }
+.tab_content{
+    height: 100vh;;
+    z-index: -1;
+}
+.tab_content .background-image{
+    /* background-image: url('./static/projects.png'); */
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    vertical-align: top;
+    z-index:-1;
+    /* position: sticky; */
+    /* top: 0; */
+}
+.tab_content .background-image-2{
+    /* background-image: url('./static/projects.png'); */
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    vertical-align: top;
+    z-index:-1;
+    position: absolute;
+    top: 0;
+    animation-name: hovering;
+    animation-iteration-count: infinite;
+    animation-duration: 3500ms;
+    z-index:99;
+    /* background-color: gold;
+    background-blend-mode: multiply; */
+}
+@keyframes hovering {
+    0%{
+        transform: translate(0px, 0px)
+    }
+    50%{
+        transform: translate(-10px,-10px)
+    }
+    100%{
+        transform: translate(0px, 0px)
+    }
+}
+.tab_content .content{
+    height: 100%;
+    overflow-y: auto;
+}
+.fs-35{
+    font-size: 35px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fa.fa-envelope, .mail-color{
+    color:  #B23121;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.fa-linkedin{
+    color:#0676A8;
+}
+.fa-instagram{
+    color:#dd2a7b;
+}
+.pointer{
+    cursor: pointer;
+}
+.nav .logo{
+    background-image: url('./static/pcelogo.png');
+    height: 5rem;
+    width: 5rem;
+    background-position: center;
+    background-size: cover;
+}
+#home .background-image{
+    background-image: url(./static/home_nav.jpg);
+    opacity: 0.5!important;
+}
+/* #home .background-image-2{
+    background-image: url(./static/home_nav.jpg);
+} */
+.tab_content #home .content .data{
+    color:#ffffff;
+    background-color: #1b3058;
+    border-radius: 0.5rem;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    max-height: 68vh;
+    overflow-y: auto;
+    word-spacing: 0.25rem;
+    line-height: 2.5rem;
+}
+.tab_content #home .content .header{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Sofia', 'Cormorant', serif;
+}
+.tab_content #home .content  .name{
+    font-size: 50px;
+    font-weight: bold;
+    color: grey;
+    font-family: 'Cormorant', serif;
+}
