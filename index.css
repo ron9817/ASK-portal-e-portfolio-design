@@ -1,2 +1,21 @@
 @import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "./node_modules/font-awesome/css/font-awesome.min.css";
+body{
+    transition: all 1s ease;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+    /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffcb00;
+}
+
+    /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a41d3145;
+}
