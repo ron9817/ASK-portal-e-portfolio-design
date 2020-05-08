@@ -186,3 +186,46 @@ body{
     color: grey;
     font-family: 'Cormorant', serif;
 }
+#projects .background-image{
+    background-image: url(./static/projects.png);
+}
+#projects .background-image-2{
+    background-image: url(./static/projects.png);
+}
+.tab_content #projects .content .project-container{
+    background-color: #1b3058;
+    height: 15rem;
+    /* width: 15rem; */
+    /* border-radius: 2rem; */
+    /* opacity: 0.5; */
+}
+.tab_content #projects .content{
+    height: 95%;
+    overflow-y: auto;
+}
+.tab_content #projects .content .project-container .image{
+    background-image: url('./static/iot.png');
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 100%;
+    /* transition: all 100ms ease; */
+}
+.tab_content #projects .content .project-container .text{
+    width: 70%;
+    height: 100%;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+}
+.tab_content #projects .content .project-container .text .title{
+    font-size: 20px;
+    word-spacing: 0.25rem;
+    line-height: 2.5rem;
+}
+.tab_content #projects .content .project-container .text .description{
+    font-size: 15px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+}
