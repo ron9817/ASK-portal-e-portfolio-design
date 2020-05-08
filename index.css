@@ -150,7 +150,7 @@ body{
     cursor: pointer;
 }
 .nav .logo{
-    background-image: url('./static/pcelogo.png');
+    background-image: url(./static/pcelogo.png);
     height: 5rem;
     width: 5rem;
     background-position: center;
@@ -204,7 +204,7 @@ body{
     overflow-y: auto;
 }
 .tab_content #projects .content .project-container .image{
-    background-image: url('./static/iot.png');
+    background-image: url(./static/iot.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -226,6 +226,32 @@ body{
 }
 .tab_content #projects .content .project-container .text .description{
     font-size: 15px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+}
+#achievements .background-image{
+    background-image: url(./static/achievements.png);
+}
+#achievements .background-image-2{
+    background-image: url(./static/achievements.png);
+}
+.tab_content #achievements .content .data{
+    color:#ffffff;
+    background-color: #1b3058;
+    border-radius: 0.5rem;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    max-height: 86vh;
+    overflow-y: auto;
+}
+.tab_content #achievements .content .data .title{
+    font-size: 20px;
+    word-spacing: 0.25rem;
+    line-height: 2.0rem;
+    color: #ffcb00;
+}
+.tab_content #achievements .content .data .description{
+    font-size: 16px;
     word-spacing: 0.25rem;
     line-height: 1.5rem;
 }
