@@ -284,3 +284,40 @@ body{
 .tab_content #internships .content .data .description .title_sm{
     color: #ffcb00;
 }
+#skills .background-image{
+    background-image: url(./static/skills.png);
+}
+#skills .background-image-2{
+    background-image: url(./static/skills.png);
+}
+.tab_content #skills .content .data{
+    color:#ffffff;
+    background-color: #1b3058;
+    border-radius: 0.5rem;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    max-height: 86vh;
+    overflow-y: auto;
+}
+.tab_content #skills .content .data .title{
+    /* font-size: 18px;
+    word-spacing: 0.25rem;
+    line-height: 2.0rem; */
+    color: #ffffff;
+}
+.tab_content #skills .content .data #soft .text, .tab_content #skills .content .data #hard .text{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    word-spacing: 0.25rem;
+    line-height: 2.0rem;
+    color: #ffcb00;
+}
+.fa.fa-star{
+    color: #ffcb00!important;
+}
+.tab_content #skills .content .data .rating{
+    font-size: 16px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+}
