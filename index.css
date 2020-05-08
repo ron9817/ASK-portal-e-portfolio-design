@@ -321,3 +321,48 @@ body{
     word-spacing: 0.25rem;
     line-height: 1.5rem;
 }
+.fa.fa-arrow-down{
+    -webkit-text-stroke: 1.1px #ffffff;
+}
+#academics .background-image{
+    background-image: url(./static/academics.png);
+}
+#academics .background-image-2{
+    background-image: url(./static/academics.png);
+}
+.tab_content #academics .content .card .year{
+    font-size: 22px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #ffcb00;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+}
+.tab_content #academics .content .card .class{
+    font-size: 18px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+.tab_content #academics .content .card .school{
+    font-size: 18px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+.tab_content #academics .content .card .marks{
+    font-size: 18px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+.tab_content #academics .content .card{
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    word-spacing: 0.25rem;
+    line-height: 2.0rem;
+    background-color: #1b3058;
+}
