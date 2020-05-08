@@ -255,3 +255,32 @@ body{
     word-spacing: 0.25rem;
     line-height: 1.5rem;
 }
+#internships .background-image{
+    background-image: url(./static/internships.png);
+}
+#internships .background-image-2{
+    background-image: url(./static/internships.png);
+}
+.tab_content #internships .content .data{
+    color:#ffffff;
+    background-color: #1b3058;
+    border-radius: 0.5rem;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    max-height: 86vh;
+    overflow-y: auto;
+}
+.tab_content #internships .content .data .title{
+    font-size: 20px;
+    word-spacing: 0.25rem;
+    line-height: 2.0rem;
+    color: #ffcb00;
+}
+.tab_content #internships .content .data .description{
+    font-size: 16px;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+}
+.tab_content #internships .content .data .description .title_sm{
+    color: #ffcb00;
+}
