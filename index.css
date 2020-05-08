@@ -19,6 +19,7 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #a41d3145;
 }
+
 .side-bar{
     width: 25vw;
     position: fixed;
@@ -80,7 +81,7 @@ body{
     z-index: -1;
 }
 .tab_content .background-image{
-    /* background-image: url('./static/projects.png'); */
+    /* background-image: url('/static/projects.png'); */
     height: 100%;
     background-position: center;
     background-size: cover;

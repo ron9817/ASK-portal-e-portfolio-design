@@ -6,11 +6,14 @@
     <title>Portfolio</title>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./index.js"></script>
-
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css"><script src="index.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
 </head>
 <body>
+    <div class="logo">
+        <img src="./static/pcelogo.png"> PCE ASK E-Portfolio
+    </div>
     <div class="side-bar py-3 px-5 my-0 mx-5">
         <div class="text-left side_nav d-flex flex-wrap align-content-center active" id="home_nav"><span class="pointer" id="home_tab" data-next="projects" data-prev="contact" data-id="home">Home</span></div>
         <div class="text-left side_nav d-flex flex-wrap align-content-center"><span class="pointer" id="projects_tab"  data-next="achievements" data-prev="home" data-id="projects">Projects</span></div>
@@ -132,6 +135,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="row m-0 p-0 h-100 bg" id="achievements">
             <div class="col p-0 w-50">
                 <div class="w-100 background-image"></div>
@@ -1024,5 +1028,6 @@
             </div>
         </div>
     </div>
+    <script src="node_modules/popper/index.js"></script>
 </body>
 </html>
