@@ -397,4 +397,32 @@ body{
     line-height: 1.5rem;
     font-size: 15px;
 }
-
+#resume_tab{
+    background-color: #ffcb00;
+    border-radius: 0.5rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+.tab_content .bg:nth-child(even){
+    background-color: #ede7f6;
+}
+.logo{
+    color: #a41d31;
+    position: fixed;
+    top: 0;
+    height: 2rem;
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    color:  #B23121;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+    font-weight: 900;
+}
+.logo img{
+    height: 100%;
+}
+.fs-59{
+    font-size: 59px;
+}
