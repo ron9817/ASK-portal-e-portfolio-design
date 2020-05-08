@@ -366,3 +366,35 @@ body{
     line-height: 2.0rem;
     background-color: #1b3058;
 }
+#contact .background-image{
+    background-image: url(./static/contact_us.png);
+}
+#contact .background-image-2{
+    background-image: url(./static/contact_us.png);
+}
+#contact .btn.btn-primary{
+    background-color: #ffcb00;
+    border: 1px solid #ffcb00;;
+}
+#contact form{
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    color:  #B23121;
+    font-weight: 800;
+    font-size: 17px;
+}
+#contact input{
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    color:  #B23121;
+    font-size: 15px;
+}
+#contact textarea{
+    text-align: justify;
+    font-family: 'Cormorant', serif;
+    color:  #B23121;
+    word-spacing: 0.25rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+
