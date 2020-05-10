@@ -50,42 +50,49 @@ $(document).ready(_=>{
         // scroll=false;
     });
     $(document).scroll(_=>{
-        let current_top=$(document).scrollTop();
-        switch(true){
-            case (current_top>=_top.contact.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.contact.target).parent().addClass("active");
-                break;
-            case (current_top>=_top.academics.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.academics.target).parent().addClass("active");
-                break;
-            case (current_top>=_top.skills.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.skills.target).parent().addClass("active");
-                break;
-            case (current_top>=_top.internships.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.internships.target).parent().addClass("active");
-                break;
-            case (current_top>=_top.achievements.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.achievements.target).parent().addClass("active");
-                break;
-            case (current_top>=_top.projects.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.projects.target).parent().addClass("active");
-                break;
-            case (current_top>=_top.home.top):
-                $(_side_nav+".active").removeClass("active");
-                $(_top.home.target).parent().addClass("active");
-                break;
+        if(!$("body").hasClass("scrolling")){
+            let current_top=$(document).scrollTop();
+            switch(true){
+                case (current_top>=_top.contact.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.contact.target).parent().addClass("active");
+                    break;
+                case (current_top>=_top.academics.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.academics.target).parent().addClass("active");
+                    break;
+                case (current_top>=_top.skills.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.skills.target).parent().addClass("active");
+                    break;
+                case (current_top>=_top.internships.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.internships.target).parent().addClass("active");
+                    break;
+                case (current_top>=_top.achievements.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.achievements.target).parent().addClass("active");
+                    break;
+                case (current_top>=_top.projects.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.projects.target).parent().addClass("active");
+                    break;
+                case (current_top>=_top.home.top):
+                    $(_side_nav+".active").removeClass("active");
+                    $(_top.home.target).parent().addClass("active");
+                    break;
+            }
         }
 
     });
     letChangeTab=(element)=>{
+        $("body").addClass("scrolling");
         $(_side_nav+".active").removeClass("active");
         $(element).parent().addClass("active");
         scrollTo(0,$("#"+$(element).data('id')).offset().top);
+        setTimeout(_=>{
+            $("body").removeClass("scrolling");
+        },1500);
+        
     }
 });
