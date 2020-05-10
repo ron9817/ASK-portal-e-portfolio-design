@@ -6,7 +6,7 @@
 $(document).ready(_=>{
     scrollTo(0,0);
     const _side_nav=".side-bar .side_nav";
-    const variable_difference=0;
+    const variable_difference=50;
     window._top={
             home:{
                 id:"#home",

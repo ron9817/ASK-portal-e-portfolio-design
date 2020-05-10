@@ -1,8 +1,5 @@
 @import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "./node_modules/font-awesome/css/font-awesome.min.css";
-body{
-    transition: all 1s ease;
-}
 ::-webkit-scrollbar {
     width: 3px;
 }
@@ -25,19 +22,24 @@ body{
     position: fixed;
     min-width: 470px;
     z-index: 200;
+    height: 100vh;
 }
 .side-bar .side_nav{
-    height: 5.2rem;
+    height: 12.5%;
     color: #a41d31;
     font-weight: bold;
     position: relative;
-    transition: all 1s ease;
+    transition: none;
     font-family: 'Cormorant', serif;
+    font-size: 15px;
 }
 .side-bar .side_nav.active{
-    height: 6rem;
+    height: 12.5%;
     font-size: 30px;
-    transition: all 1s ease;
+    transition-property: font-size;
+    transition-delay: 100ms;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
 }
 .side-bar .side_nav:before{
     content: ' ';
@@ -46,7 +48,7 @@ body{
     border-radius: 3rem;
     width: 0.5rem;
     height: 0.5rem;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
 }
 .side-bar .side_nav.active:before{
     content: ' ';
@@ -55,7 +57,7 @@ body{
     border-radius: 3rem;
     width: 0.5rem;
     height: 0.5rem;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
 }
 .side-bar .side_nav#home_nav.active:before {
     content: ' ';
@@ -64,7 +66,7 @@ body{
     border-radius: 3rem;
     width: 0.5rem;
     height: 0.5rem;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
 }
 .side-bar:before{
     content: ' ';
@@ -74,7 +76,7 @@ body{
     width: 1.5px;
     height: 37rem;
     position: absolute;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
 }
 .tab_content{
     height: 100vh;;
