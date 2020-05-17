@@ -17,6 +17,38 @@
     background: #a41d3145;
 }
 
+
+#projects .content::-webkit-scrollbar {
+    width: 3px;
+    display: none;
+}
+#projects .content::-webkit-scrollbar-track {
+    background: #ffffff;
+    display: none;
+}
+
+    /* Handle */
+#projects .content::-webkit-scrollbar-thumb {
+    background: #ffcb00;
+    display: none;
+}
+
+    /* Handle on hover */
+#projects .content::-webkit-scrollbar-thumb:hover {
+    background: #a41d3145;
+    display: none;
+}
+
+
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+.px-6{
+    padding: 0 5rem;
+}
 .side-bar{
     width: 50vw;
     position: fixed;
@@ -187,7 +219,7 @@
     text-align: justify;
     font-family: 'Cormorant', serif;
     font-size: 20px;
-    max-height: 68vh;
+    max-height: 68%;
     overflow-y: auto;
     word-spacing: 0.25rem;
     line-height: 2.5rem;
