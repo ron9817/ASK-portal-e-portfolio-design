@@ -252,12 +252,16 @@
     height: 95%;
     overflow-y: auto;
 }
+.tab_content #projects .content .project-container .image img{
+    width: 100%;
+    height: 100%;
+}
 .tab_content #projects .content .project-container .image{
-    background-image: url(./static/iot.png);
-    background-color: transparent;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    /* background-image: url(./static/iot.png); */
+    /* background-color: transparent; */
+    /* background-position: center; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
     width: 25%;
     height: 100%;
     /* transition: all 100ms ease; */
@@ -271,12 +275,15 @@
 .tab_content #projects .content .project-container .text .title{
     font-size: 20px;
     word-spacing: 0.25rem;
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
+    height: 25%;
 }
 .tab_content #projects .content .project-container .text .description{
     font-size: 15px;
     word-spacing: 0.25rem;
     line-height: 1.5rem;
+    overflow-y: auto;
+    height: 75%;
 }
 #achievements .background-image{
     background-image: url(./static/achievements.png);
