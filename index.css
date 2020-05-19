@@ -16,8 +16,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #a41d3145;
 }
-
-
 #projects .content::-webkit-scrollbar {
     width: 3px;
     display: none;
@@ -32,12 +30,13 @@
     background: #ffcb00;
     display: none;
 }
-
     /* Handle on hover */
 #projects .content::-webkit-scrollbar-thumb:hover {
     background: #a41d3145;
     display: none;
 }
+
+
 .h-15{
     height: 15%;
 }
@@ -59,6 +58,36 @@
 .px-6{
     padding: 0 5rem;
 }
+
+.fs-35{
+    font-size: 35px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fa.fa-envelope, .mail-color{
+    color:  #B23121;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.fa-linkedin{
+    color:#0676A8;
+}
+.fa-instagram{
+    color:#dd2a7b;
+}
+.pointer{
+    cursor: pointer;
+}
+
+
 .side-bar{
     width: 50vw;
     position: fixed;
@@ -180,33 +209,6 @@
 .tab_content .content{
     height: 80%;
     overflow-y: auto;
-}
-.fs-35{
-    font-size: 35px;
-}
-.fs-14{
-    font-size: 14px;
-}
-.fs-12{
-    font-size: 12px;
-}
-.fs-20{
-    font-size: 20px;
-}
-.fa.fa-envelope, .mail-color{
-    color:  #B23121;
-}
-.font-weight-bold{
-    font-weight: bold;
-}
-.fa-linkedin{
-    color:#0676A8;
-}
-.fa-instagram{
-    color:#dd2a7b;
-}
-.pointer{
-    cursor: pointer;
 }
 .nav .logo{
     background-image: url(./static/pcelogo.png);
