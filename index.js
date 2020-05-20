@@ -7,6 +7,7 @@ $(document).ready(_=>{
     scrollTo(0,0);
     const _side_nav=".side-bar .side_nav";
     const variable_difference=50;
+    const project=".tab_content #projects .content .project-container";
     window._top={
             home:{
                 id:"#home",
@@ -46,8 +47,11 @@ $(document).ready(_=>{
     };
     $(document).on("click",_side_nav+" span:not(#resume_tab)",function(){
         // scroll=true;
-        letChangeTab(this);
+        ChangeTab(this);
         // scroll=false;
+    });
+    $(document).on("click",project,function(){
+        toggleExpanded(this);
     });
     $(document).scroll(_=>{
         if(!$("body").hasClass("scrolling")){
@@ -85,7 +89,7 @@ $(document).ready(_=>{
         }
 
     });
-    letChangeTab=(element)=>{
+    let ChangeTab=(element)=>{
         $("body").addClass("scrolling");
         $(_side_nav+".active").removeClass("active");
         $(element).parent().addClass("active");
@@ -93,6 +97,19 @@ $(document).ready(_=>{
         setTimeout(_=>{
             $("body").removeClass("scrolling");
         },1500);
+        
+    }
+    let toggleExpanded=(element)=>{
+        if(!$(element).hasClass("expanded")){
+            $(project+".expanded").addClass("d-flex").removeClass("d-block");
+            setTimeout(_=>{
+                $(project+".expanded").removeClass("expanded");
+            },1);
+        }
+        $(element).toggleClass("d-flex").toggleClass("d-block");
+        setTimeout(_=>{
+            $(element).toggleClass("expanded");
+        },1);
         
     }
 });
